@@ -14,3 +14,144 @@
     font-weight: 300;
 }
 
+h1{
+    color:var(--gray);
+    font-size: 25px;
+}
+
+span{
+    color:var(--very-dark-blue);
+    font-weight: 700;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+main{
+    width:90%;
+    max-width: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+
+img{
+    margin: 3.5rem 0;
+}
+
+#logo{
+    width:70px;
+    margin-bottom: 2rem;
+}
+
+#subscribe{
+    color:var(--very-dark-blue);
+    margin-bottom: 0.6rem;
+}
+
+/* Styling the form */
+
+form{
+    width:90%;
+
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+input{
+    width:100%;
+    padding:0.7rem 1.5rem;
+
+    border:1px solid var(--pale-blue);
+    border-radius: 20px;
+}
+
+input::placeholder{
+    color:var(--gray);
+}
+
+button{
+    cursor: pointer;
+    padding:0.7rem;
+    color:white;
+    font-weight: 500;
+    font-size: 14px;
+    background-color: var(--blue);
+
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0px 8px 10px -3px rgb(194, 211, 255);
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#error-message{
+    margin: 0.3rem 0 1rem 0;
+    color:var(--light-red);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Styling the social links */
+
+.social-links{
+    display: flex;
+    gap:0.7rem;
+}
+
+.social-links i{
+    cursor: pointer;
+    color: var(--blue);
+    border:1px solid var(--pale-blue);
+    border-radius: 100%;
+}
+
+.social-links i:hover{
+    color:white;
+    background-color: var(--blue);
+}
+
+#facebook-icon{
+    padding:0.4rem 0.6rem;
+}
+
+#twitter-icon{
+    padding:0.4rem;
+}
+
+#instagram-icon{
+    padding:0.4rem 0.5rem;
+}
+
+#copyright{
+    color:var(--gray);
+    font-size: 12px;
+}
+
+@media (min-width:50rem){
+    h1{
+        font-size: 35px;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 3fr 1.1fr;
+        align-items: flex-start;
+    }
+
+    #error-message{
+        text-align: left;
+        margin-left: 1rem;
+    }
+}
